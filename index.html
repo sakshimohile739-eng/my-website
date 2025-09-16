@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sakshi Aashish Mohile — Visual Resume</title>
+  <meta name="description" content="Visual resume of Sakshi Aashish Mohile (Class of 2026) — Education, Experience, Live Projects, Positions of Responsibility, Achievements, Certifications, and Hobbies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0f1a;
+      --card: #121829;
+      --muted: #9fb0d1;
+      --text: #e6eeff;
+      --accent: #7aa2ff;
+      --chip:#1a2440;
+      --line:#203055;
+      --ok:#84e1a7;
+      --warn:#ffd480;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b0f1a 0%,#0e1526 100%);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.45}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1000px;margin:32px auto;padding:24px}
+    .hero{
+      position:relative;
+      padding:28px clamp(16px,3vw,32px);
+      background:radial-gradient(1200px 600px at 10% -10%, #1f2a48 0%, transparent 60%) , var(--card);
+      border:1px solid #23325b;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.02);
+      overflow:hidden;
+    }
+    .flex{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{
+      width:104px;height:104px;border-radius:16px;background:#0b0f1a;border:1px solid #2b3b6b;display:flex;align-items:center;justify-content:center;
+      color:#89a3ff;font-weight:700;font-size:32px;letter-spacing:.5px
+    }
+    .title h1{margin:0;font:700 36px/1.05 "Playfair Display",serif}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid #2b3b6b;color:#cfe0ff;font-size:12px}
+    .actions{margin-left:auto;display:flex;gap:10px}
+    .btn{
+      appearance:none;border:none;cursor:pointer;border-radius:10px;padding:10px 14px;font-weight:600;
+      background:#203055;color:#cfe0ff;border:1px solid #2b3b6b;transition:.2s transform ease,.2s opacity ease
+    }
+    .btn:hover{transform:translateY(-1px);opacity:.95}
+    .btn.accent{background:linear-gradient(135deg,#5f86ff,#7aa2ff);color:#061022;border:0}
+    .grid{margin-top:24px;display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:920px){.grid{grid-template-columns:1fr 1fr}}
+    section.card{
+      background:var(--card);border:1px solid #23325b;border-radius:16px;padding:18px clamp(16px,2vw,22px);
+      box-shadow:0 12px 32px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.02)
+    }
+    .card h2{margin:0 0 12px;font:700 20px/1.2 Inter,system-ui}
+    .item{display:grid;grid-template-columns:1fr auto;gap:6px 14px;padding:12px 0;border-bottom:1px dashed var(--line)}
+    .item:last-child{border-bottom:none}
+    .item .where{font-weight:600}
+    .item .meta{color:var(--muted);font-size:13px;white-space:nowrap}
+    .bullets{grid-column:1/-1;margin-top:4px}
+    .bullets li{margin:6px 0 6px 20px}
+    .tagline{color:#cfe0ff;margin:6px 0 0;font-size:14px}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid #2b3b6b;background:#101734;color:#9ec2ff;font-size:12px;margin-left:8px}
+    .timeline .item{align-items:start}
+    .pill{display:inline-block;background:#17305a;border:1px solid #2b3b6b;border-radius:999px;padding:2px 8px;color:#bfd3ff;font-size:12px;margin-left:8px}
+    /* print */
+    @media print{
+      body{background:white}
+      .hero,.card{box-shadow:none;border-color:#ccc}
+      .btn,.actions{display:none !important}
+      a{color:inherit;text-decoration:none}
+    }
+    /* small helper icons */
+    .ico{width:16px;height:16px;vertical-align:-3px;margin-right:6px;opacity:.9}
+    .foot{margin:20px 0;color:var(--muted);font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="flex">
+        <div class="avatar" aria-hidden="true">SM</div>
+        <div class="title">
+          <h1>Sakshi Aashish Mohile</h1>
+          <p>MBA Candidate, BITSoM (Class of 2026) · Visual Resume</p>
+          <div class="chips">
+            <span class="chip">Marketing</span>
+            <span class="chip">ABM & GTM</span>
+            <span class="chip">Brand & Performance</span>
+            <span class="chip">Live Projects</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#" onclick="window.print()">
+            <!-- printer icon -->
+            🖨️&nbsp;Print / Save PDF
+          </a>
+          <a class="btn accent" href="./Sakshi_Mohile.pdf" download>
+            ⤓&nbsp;Download CV (PDF)
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Education -->
+      <section class="card">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="where">MBA — BITS School of Management (BITSoM), Mumbai</div>
+          <div class="meta">2026 · Pursuing</div>
+        </div>
+        <div class="item">
+          <div class="where">B.Com — Ramniranjan Jhunjhunwala College (Autonomous), Mumbai</div>
+          <div class="meta">2023 · 9.95/10</div>
+        </div>
+        <div class="item">
+          <div class="where">Class 12 — B K Birla College (Autonomous), Kalyan</div>
+          <div class="meta">2020 · 84.6%</div>
+        </div>
+        <div class="item">
+          <div class="where">Class 10 (CBSE) — B K Birla Public School, Kalyan</div>
+          <div class="meta">2018 · 90.2%</div>
+        </div>
+        <p class="tagline">
+          <strong>Academic Achievements:</strong>
+          Ranked 1st out of 371 students across all three years of B.Com (overall 3798/4000)
+          <span class="badge">AIR 93 — National Creativity Olympiad</span>
+        </p>
+      </section>
+
+      <!-- Internships -->
+      <section class="card">
+        <h2>Internships</h2>
+
+        <div class="item">
+          <div class="where">Marketing Associate — Zapcom Solutions Pvt Ltd</div>
+          <div class="meta">(Apr’25–Jun’25)</div>
+          <ul class="bullets">
+            <li>Drafted Dripify campaigns for international outreach, generating <strong>20+ leads</strong> in EU tourism & hospitality.</li>
+            <li>Produced <strong>60+ marketing assets</strong> (whitepapers, carousels, decks) supporting sales, GTM, and ABM.</li>
+            <li>Revamped website content & structure → <strong>load time −50%</strong>, improved UX and search performance.</li>
+            <li>Grew audience organically in 10 weeks: <strong>4k+ LinkedIn followers</strong>, <strong>10k+ Instagram views</strong>.</li>
+            <li>Benchmarked <strong>10+ competitors</strong> to shape positioning; led internal initiatives for <strong>250+ employees</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Marketing Intern — Omkar IT Solution</div>
+          <div class="meta">(Jul’23–Sep’23)</div>
+          <ul class="bullets">
+            <li>Converted <strong>15+ B2C leads</strong> for IT training via email marketing & outreach.</li>
+            <li>Raised customer satisfaction by managing CRM, resolving inquiries & streamlining onboarding demos.</li>
+            <li>Created marketing materials improving overall customer experience.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Growth & Business Development Intern — Delta X</div>
+          <div class="meta">(May’22–Jul’22)</div>
+          <ul class="bullets">
+            <li>Identified and built a base of <strong>50+ B2B prospects</strong> for Bizgain; used SE Ranking for market research.</li>
+            <li>Achieved <strong>20% conversion</strong> by surveying leads to understand pain points and fit.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Live Projects -->
+      <section class="card timeline">
+        <h2>Live Projects</h2>
+
+        <div class="item">
+          <div class="where">Grant Thornton — Corporate Live Project <span class="pill">Sep’25</span></div>
+          <div class="meta"></div>
+          <ul class="bullets">
+            <li>Conducted market research & on-ground retailer surveys; delivered actionable regional insights.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Tata Power EZ Charge — Corporate Live Project <span class="pill">Jan’25–Mar’25</span></div>
+          <div class="meta"></div>
+          <ul class="bullets">
+            <li>Generated <strong>10+ qualified leads</strong> through market analysis & customer profiling for EV charging GTM in MMR.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Mission for Vision — Social Live Project <span class="pill">Nov’24–Feb’25</span></div>
+          <div class="meta"></div>
+          <ul class="bullets">
+            <li>Analysed <strong>50+ studies</strong> on rural & gender disparities; designed awareness strategies on avoidable blindness.</li>
+            <li>Built an outreach network of <strong>40+ journalists</strong>; simplified research to advance equitable eye care advocacy.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Lululemon — Live Project <span class="pill">Jul’24</span></div>
+          <div class="meta"></div>
+          <ul class="bullets">
+            <li>Crafted an omnichannel marketing strategy for an at-home fitness platform; authored a creative brief with experiential ideas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Positions of Responsibility -->
+      <section class="card">
+        <h2>Positions of Responsibility</h2>
+
+        <div class="item">
+          <div class="where">President — Raise a Toast (Public Speaking Club)</div>
+          <div class="meta">2024–26</div>
+          <ul class="bullets">
+            <li>1 of 12 selected (out of 66 applicants) as junior member; later elected President leading 24 members.</li>
+            <li>Organized Youth Parliament & Open Mic for <strong>100+ students</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Marketing & Outreach Team — BITSoM Business Conclave & Fest</div>
+          <div class="meta">2024–25</div>
+          <ul class="bullets">
+            <li>1 of 7 core members; event drew <strong>400+ attendees</strong>; POC for speakers from top FMCG & IT firms.</li>
+            <li>Hosted a podcast with Adobe’s Sr. Product Manager.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">General Secretary — Students’ Council</div>
+          <div class="meta">2021–23</div>
+          <ul class="bullets">
+            <li>First elected female General Secretary; served two terms.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="where">Fest Head · Chief Editor · Contingent Leader · CWDC Member</div>
+          <div class="meta">2020–23</div>
+          <ul class="bullets">
+            <li>Headed 80 volunteers for annual fest (500+ footfall); led magazine editorial team for Diamond Jubilee Issue.</li>
+            <li>Managed PR & representation in inter-collegiate events; organized 15+ awareness campaigns with Women Development Cell.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Achievements & Volunteering -->
+      <section class="card">
+        <h2>Achievements & Volunteering</h2>
+        <div class="item">
+          <div class="where">Case Challenge — SIBM Pune Strategy Competition</div>
+          <div class="meta">2024–25</div>
+          <ul class="bullets">
+            <li><strong>National Winner</strong> among 600+ teams (Quick Commerce).</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="where">Literary Arts</div>
+          <div class="meta">2022</div>
+          <ul class="bullets">
+            <li>1st Prize in Elocution (Mumbai University Youth Festival, zonal round; 50+ colleges).</li>
+            <li>1st Prize in Debate (intra-collegiate; 40+ participants).</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="where">Community Service</div>
+          <div class="meta">2017–22</div>
+          <ul class="bullets">
+            <li>Akshara NGO’s Youth for Change (Citizenship & Gender Justice).</li>
+            <li>Felicitated for raising the highest funds in Mumbai for LEAP (Alert India).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certifications & Interests -->
+      <section class="card">
+        <h2>Certifications & Interests</h2>
+        <div class="item">
+          <div class="where">French — DELF A1 & A2 (French Ministry of Education)</div>
+          <div class="meta">2021–22</div>
+        </div>
+        <div class="item">
+          <div class="where">Securities Market — 1-Month Training (BSE Brokers’ Forum)</div>
+          <div class="meta">2021</div>
+        </div>
+        <div class="item">
+          <div class="where">Hobbies</div>
+          <div class="meta"></div>
+          <ul class="bullets">
+            <li><strong>Travel:</strong> 30+ destinations; gastronomy & historical immersion.</li>
+            <li><strong>Baking:</strong> Self-taught since 14; sweet & savoury (cakes, pizza, more).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <p class="foot">
+      © <span id="yr"></span> Sakshi Aashish Mohile · This page was generated from a résumé and formatted for web & print.
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
